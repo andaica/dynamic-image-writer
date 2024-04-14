@@ -45,11 +45,11 @@ export class ImageProcessor {
         .print(fontCollectionName, 86, 34, voucherData.collectionName)
         .print(fontBalance, 30, 85, voucherData.balance)
         .print(fontInfoTitle, 50, 222, 'Start time:')
-        .print(fontInfoContent, 132, 220, voucherData.startTime)
+        .print(fontInfoContent, 135, 220, voucherData.startTime)
         .print(fontInfoTitle, 50, 267, 'End time:')
-        .print(fontInfoContent, 132, 265, voucherData.endTime)
-        .print(fontInfoTitle, 50, 312, 'Address:')
-        .print(fontInfoContent, 132, 310, voucherData.tokenAddress)
+        .print(fontInfoContent, 135, 265, voucherData.endTime)
+        .print(fontInfoTitle, 50, 312, 'Token:')
+        .print(fontInfoContent, 135, 310, voucherData.tokenAddress)
         .print(fontPowerBy, 35, 392, voucherData.credit)
         .writeAsync(`output/${imageData.hashId}.png`);
     } catch (error) {
